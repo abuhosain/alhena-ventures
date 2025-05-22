@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
+import { ChevronsRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/logo/alhena-logo.svg";
 
@@ -61,17 +62,13 @@ const Header = () => {
             </div>
           </motion.div>
 
-          <motion.button
-            className="bg-white uppercase text-[#1a1a1a] px-6 py-3 rounded-md font-semibold"
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: "#facc15", // Tailwind yellow-400
-            }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
+          <a
+            className="flex  gap-2 cursor-pointer px-4 py-3 dark:hover:bg-black bg-black hover:bg-white hover:text-black text-white border-black dark:hover:text-white transition-all border-2 dark:border-white dark:bg-white dark:text-black rounded-full font-semibold"
+            href="#"
           >
             Get in Touch
-          </motion.button>
+            <ChevronsRight />
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -131,17 +128,13 @@ const Header = () => {
                 </div>
               </div>
 
-              <motion.button
-                className="bg-white uppercase text-[#1a1a1a] px-6 py-3 rounded-md font-semibold"
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "#facc15",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
+              <a
+                className="flex items-center justify-center gap-2 cursor-pointer px-4 py-3 dark:hover:bg-black bg-black hover:bg-white hover:text-black text-white border-black dark:hover:text-white transition-all border-2 dark:border-white dark:bg-white dark:text-black rounded-full font-semibold"
+                href="#"
               >
-                Get in Touch
-              </motion.button>
+                Know More
+                <ChevronsRight />
+              </a>
             </div>
           </motion.div>
         )}
