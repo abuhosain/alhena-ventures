@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="h-screen w-screen overflow-hidden bg-black">
+      <div className="h-[100vh]  w-screen overflow-hidden bg-black">
         <motion.div
           className="mx-auto mt-32 w-screen max-w-4xl px-4 relative z-10"
           initial="hidden"
