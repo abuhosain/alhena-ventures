@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TextMarquee from "./components/TextMarquee";
 import About from "./components/About";
- 
 
 const App = () => {
   return (
@@ -11,7 +10,10 @@ const App = () => {
       <Header />
       <Hero />
       <TextMarquee />
-      <About />
+      <div className="pt-[450px] md:pt-48 lg:pt-0">
+        {" "}
+        <About />
+      </div>
     </>
   );
 };
